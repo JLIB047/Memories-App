@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'; 
 
+//how the server reads each user's post data. 
 const postSchema = mongoose.Schema({
     title: String, 
     message: String, 
