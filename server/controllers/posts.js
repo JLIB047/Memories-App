@@ -1,8 +1,10 @@
 //Controller file makes the app more scable
 //proper folder structure
 import mongoose from 'mongoose';
+import express from 'express';
 import PostMessage from '../models/postMessage.js';
-import router from '../routes/posts.js';
+
+const router = express.Router();
 
 //takes time to find posts: need async/await 
 export const getPosts = async (req, res) => {
@@ -68,3 +70,4 @@ export const likePost = async (req, res) => {
 
 }
 
+export default router;
